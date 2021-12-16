@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* margin: 0; задает внешние границы */
+    /* padding: 0; задает внутренние границы */
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo{
+    height: 800px;
+    background: url('../img/firstscreen/Mainimg.bj.jpg') center center/cover no-repeat;
+    padding: 39px 0 62px 0;
+}
+
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text{
+    margin: 14px 193px 53px 191px;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 14px;
+}
+
+h1{
+    margin-top: 53px;
+}
+
+h2.title{
+    margin-top: 30px;
+}
+
+.title{
+    margin: 53px 193px 21px 196px;
+    font-size: 41px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.59;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f9bf3b;
+}
+
+.simple .title_big{
+    margin: 21px 20px 30px 18px;
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.33;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 21px;
+}
+
+.promo .promo_text{
+    padding: 0 0 13px;
+    margin: 23px 13px 73px 12px;
+    font-size: 21px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.promo .promo_text span{
+    font-weight: bold;
+    color: #f9bf3b;
+}
+
+.promo .promo_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    /* margin: 0 auto;главный margin задается первым, иначе его перебьют   */
+    padding: 25px 30px 29px 15px;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.18);
+    border: solid 4px rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9, #3ab6da);
+    /* здесь начинается код текста кнопки, т.к. текст - тоже относится к самой кнопке, к promo_btn */
+    text-shadow: -0.7px -0.7px 0 rgba(0, 0, 0, 0.22);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;    /* cursor: pointer; изменяет курсор на руку при наведении на кнопку */
+    outline: none;
+    /* outline: none; - убирает синюю обводку элемента */
+}
+
+.more {
+    margin-top: 73px;
+}
+
+.more .more_text {
+    width: 334px;
+    height: 11px;
+    margin: 0 auto;
+    margin-top: 73px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 30px;
+    height: 19px;
+}
+
+.waiting{
+    min-height: 604px;
+    padding: 85px 0 75px 0;
+    background-color: #efefef;
+}
+
+.waiting .waiting_header, .finish .finish_header {
+    color: #252525;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.finish .finish_header {
+    color: #ffffff;
+}
+
+.waiting .waiting_divider, .finish .finish_divider {
+    width: 217px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background-color: #f9bf3b;
+}
+
+.waiting .waiting_subheader{
+    margin: 0 auto;
+    margin-top: 17px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.waiting_wrapper{
+    margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    width: 342px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img{
+    width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr{
+    margin-top: 33px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #4a4a4a;
+}
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header {
+    margin-left: 391px;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-align: left;
+    color: #299cbd;
+}
+
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #4a4a4a;
+}
+
+.optimization .optimization_text span {
+    font-weight: bold;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -51px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/Forthscreen/presentation.jpg.png') center center/cover no-repeat;
+    /* / обязательно ставиться / иначе не будет работать */
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: center;
+    color: #efefef;
+}
+
+.gift {
+    min-height: 628px;
+    margin: 0 auto;
+    padding: 86px 395px 87px 394px;
+    background-color: #efefef;
+}
+
+.gift .gift_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 154px;
+    margin: 0 auto;
+    
+}
+
+.gift .gift_text {
+    margin-top: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252525;
+}
+
+.gift .finish_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 52px;
+    padding: 28px 30px 29px 29px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.18);
+    border: solid 4px rgba(0, 0, 0, 0.11);
+    background-image: linear-gradient(to top, #2798b9, #3ab6da);
+    text-shadow: -0.7px -0.7px 0 rgba(0, 0, 0, 0.22);
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+
+}
+/* .promo .promo_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    /* margin: 0 auto;главный margin задается первым, иначе его перебьют   */
+    /* padding: 29px 30px 29px 15px;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.18);
+    border: solid 4px rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9, #3ab6da);
+    /* здесь начинается код текста кнопки, т.к. текст - тоже относится к самой кнопке, к promo_btn */
+    /* text-shadow: -0.7px -0.7px 0 rgba(0, 0, 0, 0.22);
+    font-family: "RobotoCondensed-Regular";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;    /* cursor: pointer; изменяет курсор на руку при наведении на кнопку */
+    /* outline: none; */ */ */
+    /* outline: none; - убирает синюю обводку элемента */
+
+
+.vebinar {
+    width: 1920px;
+    min-height: 3710px;
+    background-color: #ffffff;
+}
+
+.vebinar .vebinar_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 82px;
+}
+
+.vebinar .vebinar_h2 {
+    margin: 0 auto;
+    margin-top: 37px;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.4;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.vebinar .vebinar_time{
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.33;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299cbd;
+}
+
+.vebinar .vebinar_text {
+    margin: 25px 0 64px 0;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 0.87;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+footer {
+    min-height: 166px;
+    margin-top: 64px;
+    padding: 61px 0 69px 0;
+    background-color: #1a1a1a;
+    text-decoration: none;
+}
+.info, .info a {
+    margin: 0 auto;
+    width: 377px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;  
+}
+
+.info .info_links {
+    margin: 0 auto;
+    width: 377px;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;  
+    text-decoration: none;
+}
+
+.info .info_links a {
+    margin: 0 auto;
+    width: 377px;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;  
+    text-decoration: underline;
+}
+
