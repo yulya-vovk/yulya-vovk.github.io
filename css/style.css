@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #5b92e5;
+    padding: 25px 0 25px 0;
+}
+
+h1 {
+    margin-top: 98px;
+    font-family: 'Segoe Script';
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+}
+
+.container  {
+    width: 85%;
+    min-height: 350px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 2.5%;
+}
+   
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.action {
+        cursor: pointer;
+        user-select: none;
+ }
+
+ul li {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 10px 0 0;
+    padding-top: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 5px; 
+    text-align: left;
+    color: #000000;
+    list-style-type: none; /* Убираем маркеры у списка */
+    /* делаем элементы списка невыбираемыми */
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+   li:before {
+    content: "☐ "; /* Добавляем в качестве маркера символ */
+    }
+
+
+    /* При нажатии на кнопку, добавить цвет фона и вычеркнуть текст */
+ul li.checked {
+    /*background: #888; */
+    color: #000000;
+    text-decoration: line-through;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* Добавить "checked" отметить при нажатии на кнопку */
+ul li.checked::before {
+    content: '☑';
+    position: absolute;
+    height: 1px;
+    width: 11px;
+    left: 3px;
+    transform: translate(-50%, -50%);
+}
+
+/*Разрешает редактировать текст в блоке как угодно*/
+ul li.contenteditable {
+    border: solid; 
+    border-width: 1px;
+}
+
+  /* Стиль кнопки "Изменить" */
+.edit {
+    display: inline;
+    color: black;
+    font-weight: bold;
+    /* background-image: url(../img/pencil.png); */
+    text-decoration: none;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+
+  /* Стиль кнопки "Удалить" */
+.delete {
+    display: inline;
+    color: red;
+    font-weight: bold;
+    margin-right: 30px;
+    /* background-image: url(../img/trash.png); */
+    
+}
+
+/* img {
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+} */
+
+wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1070px;
+    height: 84px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+Input {
+    width: 100%;
+    height: 80px;
+    padding: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(58, 57, 57);
+    border-radius: 16px;
+    border-color: #ffffff;
+}
+
+.addBtn {
+    display: inline;
+    margin: 18px 20px 20px 0;
+    padding-top: 13px;
+    width: 20%;
+    height: 50px;
+    background: #2E65F1;
+    border-radius: 16px;
+    font-family: 'Roboto';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}

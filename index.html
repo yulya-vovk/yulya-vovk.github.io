@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Мой список задач 
+        </h1>
+    </header>
+    <div class="container">
+           <div class="list">
+                <ul id="myUL">
+                    <li class="checked">
+                            <span class="title">Попасть на тренировку</span>
+                         <div class="actions">
+                            <span class="action action-edit">&#128393;</span>
+                            <span class="action action-delete">&#128465;</span>
+                         </div>
+                    </li>                 
+                    <li contenteditable="true">Оплатить счета   
+                        <div class="wrapper_item">
+                            <span class="edit">&#128393;</span>
+                            <span class="delete">&#128465;</span>
+                        </div>
+                    </li> 
+                    <li contenteditable="true">Посмотреть "Человека-Паука 3"
+                        <div class="wrapper_item">
+                            <span class="edit">&#128393;</span>
+                            <span class="delete">&#128465;</span>
+                        </div>
+                    </li> 
+                    <li contenteditable="true">Купить яйца
+                        <div class="wrapper_item">
+                            <span class="edit">&#128393;</span>
+                            <span class="delete">&#128465;</span>
+                        </div>
+                    </li> 
+                    <li contenteditable="true">Прочитать книгу
+                        <div class="wrapper_item">
+                            <span class="edit">&#128393;</span>
+                            <span class="delete">&#128465;</span>
+                        </div>
+                    </li> 
+                    <li contenteditable="true">Создать to-do список
+                        <div class="wrapper_item">
+                            <span class="edit">&#128393;</span>
+                            <span class="delete">&#128465;</span>
+                        </div>
+                    </li> 
+                </ul>
+          </div>       
+   </div>
+      
+    <wrapper>
+        <input type="text" id="myInput" placeholder="Какая Ваша следующая задача?">
+        <span onclick="newElement()" class="addBtn">Добавить</span>
+    </wrapper>
+
+    
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
